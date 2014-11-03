@@ -8,7 +8,7 @@ This buildpack will work out-of-the-box with Ember CLI generated applications. I
 
 Creating a new Heroku instance from an Ember CLI application's parent directory:
 
-    $ heroku create --buildpack https://github.com/tonycoco/heroku-buildpack-ember-cli.git
+    $ heroku create --buildpack https://github.com/rkjaer/heroku-buildpack-ember-cli.git
 
     $ git push heroku master
     ...
