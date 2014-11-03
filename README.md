@@ -2,7 +2,7 @@
 
 This buildpack will work out-of-the-box with Ember CLI generated applications. It installs node, Sass (Ruby gem), nginx and generates a production build with the Ember CLI.
 
-*Sass (Ruby) is used to allow `broccoli-ruby-sass` to compile the Ember CLI assets`*
+*Sass (Ruby) is used to allow `broccoli-ruby-sass` to compile the Ember CLI assets*
 
 ## Usage
 
