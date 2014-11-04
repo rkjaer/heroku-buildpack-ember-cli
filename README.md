@@ -1,4 +1,4 @@
-# Heroku Buildpack for Ember CLI Applications
+# Heroku Buildpack for Ember CLI Applications with Ruby Sass
 
 This buildpack will work out-of-the-box with Ember CLI generated applications. It installs node, Sass (Ruby gem), nginx and generates a production build with the Ember CLI.
 
@@ -8,7 +8,7 @@ This buildpack will work out-of-the-box with Ember CLI generated applications. I
 
 Creating a new Heroku instance from an Ember CLI application's parent directory:
 
-    $ heroku create --buildpack https://github.com/rkjaer/heroku-buildpack-ember-cli.git
+    $ heroku create --buildpack https://github.com/rkjaer/heroku-buildpack-ember-cli-ruby-sass.git
 
     $ git push heroku master
     ...
@@ -38,7 +38,7 @@ Set your API's prefix path (Default: `/api/`):
 
     heroku config:set API_PREFIX_PATH=/api/
 
-*Note that the trailing slashes are important. Note that the `/api/` part is **not** included in the requested path on the `API_URL`. For more information about API proxies and avoiding CORS, [read this](http://oskarhane.com/avoid-cors-with-nginx-proxy_pass).*
+*Note that the trailing slashes are important. Note that the `/api/` part is __not__ included in the requested path on the `API_URL`. The above example (defaults) will request `http://api.example.com/resource`. For more information about API proxies and avoiding CORS, [read this](http://oskarhane.com/avoid-cors-with-nginx-proxy_pass).*
 
 #### Authentication
 
