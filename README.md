@@ -38,7 +38,9 @@ Set your API's prefix path (Default: `/api/`):
 
     heroku config:set API_PREFIX_PATH=/api/
 
-*Note that the trailing slashes are important. Note that the `/api/` part is __not__ included in the requested path on the `API_URL`. The above example (defaults) will request `http://api.example.com/resource`. For more information about API proxies and avoiding CORS, [read this](http://oskarhane.com/avoid-cors-with-nginx-proxy_pass).*
+*Note that the trailing slashes are important. Note that the `/api/` part is __not__ included in the requested path on the `API_URL`. For example (with defaults from above) a request to `http://example.com/api/products` will forward the request to `http://api.example.com/products`.* 
+
+*For more information about API proxies and avoiding CORS, [read this](http://oskarhane.com/avoid-cors-with-nginx-proxy_pass).*
 
 #### Authentication
 
